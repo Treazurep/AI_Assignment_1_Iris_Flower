@@ -12,7 +12,10 @@ data = pd.read_csv(url)
 # display the first 10 rows of the dataset
 print(data.head(10))
 
-data.shape
-data.columns
+print(data.shape)
+print(data.columns)
 data.info()
-data.describe()
+print(data.describe())
+
+# Count the number of flowers belonging to each species:
+print(data["species"].value_counts())
