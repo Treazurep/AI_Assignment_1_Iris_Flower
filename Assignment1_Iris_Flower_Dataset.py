@@ -19,3 +19,12 @@ print(data.describe())
 
 # Count the number of flowers belonging to each species:
 print(data["species"].value_counts())
+
+# Create a bar plot showing the number of flowers belonging to each species
+data["species"].value_counts().plot(kind="bar")
+
+plt.title("Number of Flowers by Species")
+plt.xlabel("Species")
+plt.ylabel("Number of Flowers")
+
+plt.show()
