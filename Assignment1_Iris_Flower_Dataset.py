@@ -28,3 +28,12 @@ plt.xlabel("Species")
 plt.ylabel("Number of Flowers")
 
 plt.show()
+
+# Create a histogram showing the distribution of petal length
+plt.hist(data["petal_length"])
+ 
+plt.title("Distribution of Petal Length")
+plt.xlabel("Petal Length")
+plt.ylabel("Frequency")
+ 
+plt.show()
