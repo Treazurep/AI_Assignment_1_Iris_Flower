@@ -37,3 +37,15 @@ plt.xlabel("Petal Length")
 plt.ylabel("Frequency")
  
 plt.show()
+
+# Create a scatter plot comparing: Petal Length vs. Petal Width
+sns.scatterplot(
+    data=data,
+    x="petal_length",
+    y="petal_width",
+    hue="species"
+)
+ 
+plt.title("Petal Length vs. Petal Width")
+ 
+plt.show()
