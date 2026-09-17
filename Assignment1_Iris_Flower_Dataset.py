@@ -61,3 +61,14 @@ sns.scatterplot(
 plt.title("Sepal Length vs. Sepal Width")
 
 plt.show()
+
+# Improving the bar plot by adding grid lines
+data["species"].value_counts().plot(kind="bar")
+
+plt.title("Number of Flowers by Species")
+plt.xlabel("Species")
+plt.ylabel("Number of Flowers")
+
+plt.grid(axis="y")
+
+plt.show()
