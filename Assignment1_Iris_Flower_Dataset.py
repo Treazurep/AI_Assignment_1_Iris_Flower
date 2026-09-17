@@ -49,3 +49,15 @@ sns.scatterplot(
 plt.title("Petal Length vs. Petal Width")
  
 plt.show()
+
+# Create my own scatter plot comparing: Sepal Length vs. Sepal Width
+sns.scatterplot(
+    data=data,
+    x="sepal_length",
+    y="sepal_width",
+    hue="species"
+)
+
+plt.title("Sepal Length vs. Sepal Width")
+
+plt.show()
